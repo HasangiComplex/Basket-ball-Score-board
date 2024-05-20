@@ -3,8 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Basketball-Scoreboard</title>
+  
 </head>
 <body>
+<div class="container">
+    <div class="home">
+        <h3>HOME</h3>
+      <p id="home-score">0</p>
+      <div>
+        <button class="home-sc-1" id="addOneHome" onclick="addScoresForHome(1)">+1</button>
+        <button class="home-sc-2"  id="addTwoHome" onclick="addScoresForHome(2)">+2</button>
+        <button class="home-sc-3" id="addThreeHome" onclick="addScoresForHome(3)">+3</button>
+      </div>
+  
 
+    </div>
+    <div class="guest">
+        <h3>GUEST</h3>
+        <p id="guest-score">0</p>
+        <div>
+            <button class="guest-sc-1" id="addOneGuest" onclick="addScoresForGuest(1)">+1</button>
+            <button class="guest-sc-2" id="addOneGuest" onclick="addScoresForGuest(2)">+2</button>
+            <button class="guest-sc-3" id="addOneGuest" onclick="addScoresForGuest(3)">+3</button>
+          </div>
+    </div>
+</div>
+   
+<script src="score.js"></script>
 </body>
 </html>
