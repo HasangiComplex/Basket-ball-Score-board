@@ -8,7 +8,7 @@
                 
 </head>
 <body>
-<div class="container">
+<div class="container" id="main-content">
     <div class="home">
         <h3>HOME</h3>
       <p id="home-score" class="score">0</p>
@@ -27,7 +27,16 @@
             <button class="guest-sc-2" id="addOneGuest" onclick="addScoresForGuest(2)">+2</button>
             <button class="guest-sc-3" id="addOneGuest" onclick="addScoresForGuest(3)">+3</button>
           </div>
-    </div>
+    </div>  
+</div>
+
+<div id="game-end" >
+ <h1>Game Ends!</h1> 
+
+</div>
+<div>
+  <button ID="reset-btn" class="in-action" onclick="reset()" >RESET</button>
+  <button ID="end-btn" class="in-action">END GAME</button>
 </div>
    
 <script src="score.js"></script>
