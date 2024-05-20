@@ -10,7 +10,7 @@ document.getElementById("addOne").addEventListener("click",()=>{
 })
 
 function addScoresForHome(points) {
-    let displayScoreHome =parseInt(homeScore.textContent)
+    let displayScoreHome = parseInt(homeScore.textContent)
     displayScoreHome+= points;
     homeScore.textContent = displayScoreHome
 

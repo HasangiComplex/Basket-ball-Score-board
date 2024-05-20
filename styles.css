@@ -1,4 +1,53 @@
+
+body{
+    background-color: #1B244A;
+}
 .container{
     display: flex;
+    justify-content: space-around;
+    
    
+}
+.home{
+    background: red;
+    text-align: center;
+    border: 2px solid #EEEEEE;
+    border-radius: 7px;
+    
+}
+  
+.guest{
+    background-color: blue;
+    text-align: center;
+    border: 2px solid #EEEEEE;
+    border-radius: 7px;
+}
+
+.score{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #080001;
+    height: 40px;
+    width: 40px;
+    color: #F94F6D;
+    text-align: center;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+                                                
+}
+
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #EEEEEE
+}
+button{
+    border: 1px solid #EEEEEE;
+    background: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    color:#EEEEEE;
+   
+}
+button:hover{
+    background-color: #F94F6D;
 }
