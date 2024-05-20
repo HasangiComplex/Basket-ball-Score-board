@@ -1,13 +1,10 @@
 let homeScore = document.getElementById("home-score");
 let guestScore = document.getElementById("guest-score");
+const resetBtn = document.getElementById("reset-btn");
+const endBtn = document.getElementById("end-btn");
+let isGameEnd = false;
 
 
-document.getElementById("addOne").addEventListener("click",()=>{
-
-    let displayVal =parseInt(homeScore.textContent)
-    displayVal += 1 ;
-    homeScore.textContent = displayVal
-})
 
 function addScoresForHome(points) {
     let displayScoreHome = parseInt(homeScore.textContent)
@@ -22,3 +19,15 @@ function addScoresForGuest(points) {
     guestScore.textContent = displayScoreGuest
 }
 
+
+
+function reset(){
+    isGameEnd = true;
+    homeScore.textContent = 0 ;
+    guestScore.textContent = 0;
+}
+
+function endGame(){
+    isGameEnd = true;
+    document.getElementById("main-content").style.display = none;
+}
